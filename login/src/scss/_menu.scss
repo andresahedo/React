@@ -1,0 +1,32 @@
+
+.myNavTop, .myNavTop .dropdown-menu {
+    background: $mainColor;
+    color: $blackColor;
+}
+
+.myNavTop a,
+.myNavTop a:hover,
+.navbar .nav-item .nav-link, 
+.navbar .nav-item .nav-link:hover,
+.navbar .dropdown-menu a {
+    color: $blackColor;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.navbar .dropdown-menu a:hover {
+    background: $secondColor;
+    color: $blackColor;
+}
+
+.navbar .dropdown-menu a {
+    padding: 3px 10px;
+    font-size: 14px;
+}
+
+
+.navbar-toggler-icon {
+    background-image: url(../img/menu-icon.svg);
+    cursor: pointer;
+}

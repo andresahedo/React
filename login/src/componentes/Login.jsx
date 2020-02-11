@@ -1,9 +1,5 @@
 import React, {Component} from 'react';
-import '../App.css';
-import '../css/main.css';
-import '../css/util.css';
-
-const API = 'http://localhost:8181/usuario';
+const API = 'http://localhost:8080/catalogoController/allJurc';
 
 
 class Login extends Component {
@@ -36,15 +32,13 @@ class Login extends Component {
 
     fetch(API,{
 		crossDomain:true,
-        method: 'post',
-        body: JSON.stringify(peticion),
-		headers:{ 'Content-Type': 'application/json' }
+        method: 'get',
+		      headers:{ 'Content-Type': 'application/json' }
       })
     .then(response => response.json())
     .then(
         data =>{
           this.setState({ usuario: data })
-          alert('Bienvenido: '+ data.nombre)
 
         }
       )
